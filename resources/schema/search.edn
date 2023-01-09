@@ -1,0 +1,2 @@
+{:queries {:search        {:type    (non-null String)
+                           :resolve :query/search}}}

@@ -1,0 +1,6 @@
+{:tasks {:init            (do
+                            (defn clojure-repro [& args]
+                              (apply clojure "-Srepro" args)))
+
+         dev             {:doc  "clojure -Srepro test <args>"
+                          :task (clojure-repro poly "dev" *command-line-args*)}}}
